@@ -1,0 +1,48 @@
+@if (productData) {
+<div class="container mt-5">
+    <div class="row product-details">
+
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img class="product-img img-fluid" src="{{productData.img}}" alt="{{productData.name}}">
+        </div>
+
+        <div class="col-md-6">
+            <h1 class="mb-3">{{productData.name}}</h1>
+            <h3 class="text-success mb-2">Price: {{productData.price | currency:'INR'}}</h3>
+            <h3 class="mb-2">Color: {{productData.color}}</h3>
+            <h6 class="text-muted mb-1">Category: {{productData.category}}</h6>
+            <p class="text-muted mb-4">Description: {{productData.description}}</p>
+
+            <div class="d-flex gap-2 mb-3">
+                <button class="btn btn-primary">Buy Now</button>
+                @if (removeCart) {
+                <button class="btn btn-secondary" (click)="removeToCart(productData.id)">Remove to Cart</button>
+                }@else {
+                <button class="btn btn-secondary" (click)="addToCart()">Add to Cart</button>
+                }
+
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-outline-secondary" (click)="handleQuantity('minus')">-</button>
+                <input type="text" class="form-control text-center" value="{{productQuantity}}" style="width: 60px;">
+                <button class="btn btn-outline-secondary" (click)="handleQuantity('plus')">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+<div class="container text-center mt-5">
+    <h1 class="mb-4">Counter App</h1>
+
+    <!-- Counter Display -->
+    <h2 class="display-4">{{ count$  }}</h2>
+
+    <!-- Buttons -->
+    <div class="mt-4">
+        <button class="btn btn-success btn-lg me-3" (click)="increment()">Increment</button>
+        <button class="btn btn-danger btn-lg me-3" (click)="decrement()">Decrement</button>
+        <button class="btn btn-secondary btn-lg" (click)="reset()">Reset</button>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <strong class="navbar-brand color" href="#">E-Comm</strong>
+        <form class="d-flex mx-auto custom-border" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success">Search</button>
+
+        </form>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        @switch (menuType) {
+        @case ('default') {
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto custom">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/seller-auth">Seller</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/user-auth">Login/Sign-up</a>
+                </li>
+                <li class="nav-item custom">
+                    <a class="nav-link">Cart({{cartCount}})</a>
+                </li>
+            </ul>
+        </div>
+        }
+        @case ("seller") {
+        <div class="collapse navbar-collapse custom" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="seller-add-product">Add Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="seller-home">List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="logOutSeller()">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link">{{sellerName | titlecase }}</p>
+                </li>
+            </ul>
+        </div>
+        }
+
+        @case ("user") {
+        <div class="collapse navbar-collapse custom" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="seller-auth">Seller</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link">{{userName | titlecase }}</p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="logOutUser()">Logout</a>
+                </li>
+            </ul>
+        </div>
+        }
+
+        }
+
+    </div>
+</nav>

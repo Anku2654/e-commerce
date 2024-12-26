@@ -1,0 +1,131 @@
+{
+  "seller": [
+    {
+      "id": "1c01",
+      "name": "Ankush Pawar",
+      "email": "ankushp736@gmail.com",
+      "password": "anku@2654"
+    },
+    {
+      "id": "7325",
+      "name": "a",
+      "email": "",
+      "password": "12345"
+    },
+    {
+      "id": "89df",
+      "name": "seller",
+      "email": "seller@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "f8b7",
+      "name": "manoj",
+      "email": "manoj@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "products": [
+    {
+      "name": "I Phone 13",
+      "price": "15000",
+      "category": "Iphone",
+      "color": "Golden",
+      "description": "Iphone Product z",
+      "img": "https://media.wired.com/photos/61439ca1ea5305148f36968a/master/w_1920,c_limit/Gear-iphone13_sierra_blue__2bovafkl4yaa_large_2x.jpg",
+      "id": "dd95"
+    },
+    {
+      "name": "shoes",
+      "price": "600",
+      "category": "nike shoes",
+      "color": "black",
+      "description": "Nike product",
+      "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a4bd232d-63c9-479a-98ee-b2349c257a87/W+NIKE+AIR+MAX+PLUS+SE.png",
+      "id": "6d62"
+    },
+    {
+      "id": "bd4a",
+      "name": "samsung m10",
+      "price": "40000",
+      "category": "samsung phone",
+      "color": "black",
+      "description": "samsung product",
+      "img": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a065fzkgins/gallery/in-galaxy-a06-sm-a065-sm-a065fzkgins-543189226?$1300_1038_PNG$"
+    },
+    {
+      "name": "jeep",
+      "price": "1000",
+      "category": " kids toy",
+      "color": "red",
+      "description": "for 5 year old",
+      "img": "https://samstoy.in/cdn/shop/files/New-pobo-ride-on-car-for-1-To-10-years-kids-sams-Toy-world-samstoy-in-4306.png?v=1724874482&width=1100",
+      "id": "ee29"
+    },
+    {
+      "name": "redmi",
+      "price": "20000",
+      "category": "mobile",
+      "color": "silver",
+      "description": "redmi phone",
+      "img": "https://i03.appmifile.com/440_item_in/09/12/2024/2355b948fc2ec263ce61efac8a26c298!600x600!85.png",
+      "id": "e1bf"
+    }
+  ],
+  "users": [
+    {
+      "id": "49b0",
+      "name": "ayush",
+      "email": "ayush@gmail.com",
+      "password": "ayush1"
+    },
+    {
+      "id": "7ee4",
+      "name": "aman",
+      "email": "aman@gmail.com",
+      "password": "56789"
+    },
+    {
+      "id": "193b",
+      "name": "tarun",
+      "email": "tarun@gmail.com",
+      "password": "55555"
+    },
+    {
+      "id": "b1ba",
+      "name": "praveen",
+      "email": "praveen@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "631c",
+      "name": "manoj",
+      "email": "manoj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "96ca",
+      "name": "raman",
+      "email": "raman@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "27e9",
+      "name": "peter",
+      "email": "peter@gmail.com",
+      "password": "22345"
+    },
+    {
+      "id": "3954",
+      "name": "john",
+      "email": "john@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "11d3",
+      "name": "sanjay",
+      "email": "sanjay@gmail.com",
+      "password": "12345"
+    }
+  ]
+}

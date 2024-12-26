@@ -1,0 +1,10 @@
+.container {
+    text-align: center;
+}
+.text-center{
+    color: #BF40BF;
+}
+.custom{
+    color: blue;
+    cursor: pointer;
+}
