@@ -70,6 +70,24 @@
       "description": "redmi phone",
       "img": "https://i03.appmifile.com/440_item_in/09/12/2024/2355b948fc2ec263ce61efac8a26c298!600x600!85.png",
       "id": "e1bf"
+    },
+    {
+      "name": "watch",
+      "price": "850",
+      "category": "fastrack watch",
+      "color": "grey",
+      "description": "nice watch",
+      "img": "https://rukminim1.flixcart.com/image/800/960/jsqe7bk0/watch/r/2/h/ng3121sm01-fastrack-original-imafe8mwng9z9kjq.jpeg?q=50",
+      "id": "3740"
+    },
+    {
+      "id": "f520",
+      "name": "watch for ladies",
+      "price": "900",
+      "category": "ladies watch",
+      "color": "pink",
+      "description": "fastrack product",
+      "img": "https://th.bing.com/th/id/OIP.MNHykZokPx0Z4nBPzPqzLgHaQj?w=156&h=350&c=7&r=0&o=5&dpr=1.4&pid=1.7"
     }
   ],
   "users": [
