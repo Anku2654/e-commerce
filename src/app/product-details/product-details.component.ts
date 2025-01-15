@@ -4,9 +4,6 @@ import { ProductService } from '../services/product.service';
 import {  CommonModule } from '@angular/common';
 import { cart, product } from '../sign-up';
 import { Observable } from 'rxjs';
-import { Store } from '@ngrx/store';
-import { AppState } from '../states/app.state';
-import { selectCart, selectCartCount } from '../states/cart/cart.selector';
 
 
 @Component({
@@ -17,14 +14,11 @@ import { selectCart, selectCartCount } from '../states/cart/cart.selector';
   styleUrl: './product-details.component.css'
 })
 export class ProductDetailsComponent {
-  count$: Observable<number>;
-  count: number = 0;
   productId: any;
   productData: any;
   productQuantity: number = 1;
   removeCart: boolean = false;
-  constructor(private route: ActivatedRoute, private productService: ProductService, private store: Store<AppState>) {
-    this.count$ = this.store.select(selectCartCount); // Use the updated selector
+  constructor(private route: ActivatedRoute, private productService: ProductService, ) {
   }
 
   ngOnInit() {
@@ -79,17 +73,5 @@ export class ProductDetailsComponent {
     this.productService.removeItemFromCart(id)
   }
 
-  increment() {
-    this.count++;
-  }
 
-  decrement() {
-    if (this.count > 0) {
-      this.count--;
-    }
-  }
-
-  reset() {
-    this.count = 0;
-  }
 }
